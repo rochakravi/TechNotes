@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  height: 100vh; // Adjust as needed
+
+  .left-section {
+    background-color: #f0f0f0; // Light gray background
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box; // Ensure padding is included in width
+
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        width: fit-content;
+        list-style: none;
+        padding: 3px 5px;
+
+        &:hover {
+          //color: #fff; // Change text color on hover
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow effect
+          transition: transform 0.2s ease-in-out;
+          // font-size: 20px;
+          //box-shadow: 1px 1px 7px 3px red;
+          // transition: background-color 0.3s, color 0.3s;
+          cursor: pointer;
+          background-color: white;
+          font-size: 18px;
+          //transform: scaleX(1);
+        }
+      }
+    }
+  }
+
+  .right-section {
+    background-color: #ffffff; // White background
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box; // Ensure padding is included in width
+  }
+}
+
+// Responsive design
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+
+    .left-section,
+    .right-section {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.note-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* styles.css */
+.highlight {
+  display: block;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+  color: blue;
+}

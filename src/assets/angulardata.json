@@ -1,0 +1,37 @@
+{
+    "notes": [
+      {
+        "title": "angular.json file",
+        "description":[{
+          "summary": "The angular.json file is a configuration file used in Angular projects to manage project settings, build configurations, and various other options related to the project's structure and behavior. It acts as a central configuration hub for the Angular CLI (Command Line Interface) and provides a way to define settings for different environments, specify build options, manage assets, and more. Overall, the angular.json file serves as a centralized configuration file for Angular projects, allowing developers to manage various aspects of their projects' setup, build process, and deployment.",
+          "code": "const add = (a, b) => a + b;\nconsole.log(add(2, 3)); // 5"
+        }]
+      },
+      {
+        "title": "Directives",
+        "description":[{
+          "summary": "Directives in Angular are essential because they allow you to extend HTML with custom behavior and create reusable components. They play a crucial role in enhancing code readability, maintainability, and reusability by encapsulating complex DOM manipulations and behavior into a single component.",
+          "code": ""
+        },
+        {
+          "summary": "Importance of Directives : Code Reusability, Encapsulation, Separation of Concerns",
+          "code": ""
+        },
+        {
+          "summary": "Challenges Without Directives: Code Duplication, DOM Manipulation in Controllers, Limited Reusability",
+          "code": "<button id='tooltipBtn' (mouseover)='showTooltip = true' (mouseout)='showTooltip = false'> \n Hover me for tooltip\n</button>\n<div *ngIf='showTooltip' class='tooltip'>This is a tooltip</div> "
+        },
+        {
+          "summary": "Example using directive",
+          "code": "<button id='tooltipBtn' appTooltip> \n Hover me for tooltip \n</button>"
+        }],
+        "summary": "Directives in Angular are essential because they allow you to extend HTML with custom behavior and create reusable components. They play a crucial role in enhancing code readability, maintainability, and reusability by encapsulating complex DOM manipulations and behavior into a single component.",
+        "code": "const name = 'World';\nconsole.log(`Hello, ${name}!`);"
+      },
+      {
+        "title": "Lazy Loading",
+        "summary": "ng g module modulename --routing",
+        "code": "const name = 'World';\nconsole.log(`Hello, ${name}!`);"
+      }
+    ]
+  }
