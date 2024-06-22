@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="left-section">
+    <h4>Topics</h4>
+    <ul>
+      <li *ngFor="let note of notes" (click)="selectNote(note)">
+        {{ note.title }}
+      </li>
+    </ul>
+  </div>
+  <div class="right-section">
+    <div *ngFor="let desc of selectedNote?.description">
+      <p>{{ desc?.summary }}</p>
+      <!--<pre><code [innerHTML]="desc?.code" class="language-javascript" appCodeHighlight></code></pre> -->
+      <pre>{{ desc?.code }}</pre>
+    </div>
+  </div>
+</div>

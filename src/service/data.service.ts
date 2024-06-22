@@ -17,4 +17,7 @@ export class DataService {
     return this.http.get<any>('assets/angulardata.json');
   }
   
+  getAWSNotes():Observable<any>{
+    return this.http.get<any>('assets/aws.json');
+  }
 }
