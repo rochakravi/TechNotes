@@ -4,11 +4,11 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { CodeHighlightDirective } from './directive/code-highlight.directive';
 import { DataService } from '../service/data.service';
-
+import { FooterComponent } from './components/footer/footer.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, CodeHighlightDirective, HeaderComponent],
+  imports: [CommonModule, RouterOutlet, CodeHighlightDirective, HeaderComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
